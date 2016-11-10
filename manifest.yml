@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: shivoNodeJs
+  host: shivoNodeJs
+  disk_quota: 1024M
+  services:
+  - Monitoring and Analytics-iw
+  env:
+    APM_BM_GATEWAY_URL: https://26aea33b1e864ae0984593edb0d9a109.agents.na.apm.ibmserviceengage.com
+    APM_KEYFILE_PSWD: pwd4dc
+    APM_KEYFILE_URL: http://gboodstatic.mybluemix.net/keyfile.p12
+    APM_SNI: 26aea33b1e864ae0984593edb0d9a109.agents.na.apm.ibmserviceengage.com
